@@ -1,9 +1,11 @@
 #!/bin/bash
 
-# Set up a virtual environment and install modules
+# Define the project directory and virtual environment directory
+PROJECT_DIR="/Users/megablast/Desktop/Code/Project-Peregrine"
+VENV_DIR="$PROJECT_DIR/venv"
 
-# Define the virtual environment directory
-VENV_DIR="venv"
+# Change to the project directory
+cd $PROJECT_DIR || { echo "Failed to change directory to $PROJECT_DIR"; exit 1; }
 
 # Check if virtual environment directory already exists
 if [ -d "$VENV_DIR" ]; then
@@ -26,5 +28,5 @@ pip install numpy tqdm pandas
 
 echo "Setup complete. Virtual environment is ready and modules are installed."
 
-# Deactivate the virtual environment
-
+# Keep the terminal open in the virtual environment
+exec bash
