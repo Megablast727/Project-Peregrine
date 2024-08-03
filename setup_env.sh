@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Define the project directory and virtual environment directory
+
 PROJECT_DIR="/Users/megablast/Desktop/Code/Project-Peregrine"
+# Obviously edit this to your liking
 VENV_DIR="$PROJECT_DIR/venv"
 
 # Change to the project directory
