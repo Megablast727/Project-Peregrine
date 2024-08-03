@@ -30,8 +30,8 @@ def analyze_results(filename):
     print(stats)
 
 def main():
-    scripts = ['PI.py', 'PI2.py', 'PI_numpy.py']  # List of your scripts
-    num_runs = 1000
+    scripts = ['PI.py', 'PI2.py', 'PI3.py']  # List of your scripts
+    num_runs = 100
     results = {}
 
     for script in scripts:
