@@ -2,8 +2,7 @@
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 #
 name: Python application
- name: CSV Contribution
- name: csv-lint
+ 
 on:
   push:
     branches: [ "main" ]
@@ -17,7 +16,7 @@ jobs:- name:
   build:          
  
 
-    runs-on: ubuntu-latest
+    runs-on: loftons-air
 
     steps:
     - uses: actions/checkout@v4
